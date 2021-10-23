@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Web-Teams</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="/webteams.css">
+      <script type="text/javascript" src="/webteams.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>WEBTEAMS</h1>
+      </header>
+
+      <div class="list">
+         ${ nr_i = 0 }$
+         <ul>
+            ${ for key_s in data_o: }$
+               ${ nr_i += 1 }$
+            <li>Team ${nr_i}$:
+               <a href="/edit/${key_s}$?listform=${listform}$">bearbeiten</a>
+               <a id ="${key_s}$" class="clDelete" href="/index/?listform=${listform}$">löschen</a>
+               <ol>
+                  <li>${data_o[key_s][0]}$, ${data_o[key_s][1]}$, ${data_o[key_s][2]}$, ${data_o[key_s][3]}$</li>
+                  <li>${data_o[key_s][4]}$, ${data_o[key_s][5]}$, ${data_o[key_s][6]}$, ${data_o[key_s][7]}$</li>
+               </ol>
+            </li>
+            ${ :end-for }$
+         </ul>
+      </div>
+
+      <a href="/add?listform=${listform}$">
+         <div class="add">
+            +
+         </div>
+      </a>
+      <a href="/index?listform=tabelle">
+         <div class="add" style="font-size: 24px;">
+            Als Tabelle darstellen
+         </div>
+      </a>
+   </body>
+</html>

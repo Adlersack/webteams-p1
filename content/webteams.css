@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: 160;
+}
+
+a, a:link, a:visited{
+
+    margin: 0;
+
+    padding: 0;
+
+    text-decoration: none;
+
+    text-decoration-style: none;
+
+    color: white;
+}
+
+a{
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.add{
+    width: 53%;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-size: 52px;
+    text-align: center;
+
+    opacity: 1;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(204, 65, 23);
+    transition: opacity 0.4s; 
+}
+
+.add:hover{
+    opacity: 0.5;
+}
+
+header{
+    height: 75px;
+
+    background-color: rgb(204, 65, 23);
+}
+
+header h1{
+    padding-top: 10px;
+    padding-bottom: auto;
+
+    font-size: 43px;
+    font-family: Calibri;
+
+    text-align: center;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+    text-align: left;
+}
+
+.table th{
+    padding: 12.5px;
+    font-size: 20px;
+
+    background-color: rgb(204, 65, 23, 0.75);
+}
+
+.table tr{
+    text-align: left;
+}
+
+.table tr > td{
+    padding: 5px;
+
+    text-align: center;
+    
+}
+
+.table tr > th:last-child{
+    text-align: left;
+}
+
+.table tr > td:last-child{
+    text-align: left;
+}
+
+.table tr:nth-child(2n){
+    background-color: rgb(204, 65, 23);
+}
+
+.entry{
+    width: 350px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+
+    margin-top: 25px;
+
+    background-color: rgb(204, 65, 23);
+}
+
+.entry > div{
+    margin: 20px;
+    text-align: left;
+}
+
+.entry > div > input{
+    position: absolute;
+    right: calc(50% - 160px);
+}
+
+.entry > div:last-child{
+    position: relative;
+}
+
+.list{
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+
+.eksde{
+    text-align: center;
+}
+
+ol{
+    padding-bottom: 25px;
+
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+input[type=submit]{
+    font-family: 'Calibri';
+
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px 50px;
+    margin-top: 14px;
+    position: relative;
+    color: #fff;
+    border: none;
+    width: 100%;
+    background-color: rgb(204, 65, 23);
+    box-shadow: 0 5px 0 rgb(116, 42, 9);
+
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(190, 72, 17);
+}
+
+input[type=submit]:hover{
+    background-color: rgb(190, 72, 17);
+}
+
+input[type=submit]:active{
+    top: 5px;
+    box-shadow: none;
+}
+
+ul > li{
+    font-size: 24px;
+}

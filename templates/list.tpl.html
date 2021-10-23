@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Web-Teams</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="/webteams.css">
+   </head>
+   <body>
+      <header>
+         <h1>WEBTEAMS</h1>
+      </header>
+      <table cellspacing="0" class="table">
+         <tr>
+            <th>Name (1)</th><th>Vorname (1)</th><th>Matr.-Nr. (1)</th><th>Semester (1)</th><th>Name (2)</th><th>Vorname (2)</th><th>Matr.-Nr. (2)</th><th>Semester (2)</th><th>Aktionen</th>
+         </tr>
+         
+         ${ for key_s in data_o: }$
+         <tr>
+            <td>${data_o[key_s][0]}$</td>
+            <td>${data_o[key_s][1]}$</td>
+            <td>${data_o[key_s][2]}$</td>
+            <td>${data_o[key_s][3]}$</td>
+            <td>${data_o[key_s][4]}$</td>
+            <td>${data_o[key_s][5]}$</td>
+            <td>${data_o[key_s][6]}$</td>
+            <td>${data_o[key_s][7]}$</td>
+            <td>
+               <a href="/edit/${key_s}$?listform=${listform}$">Bearbeiten</a><br>
+               <a id ="${key_s}$" class="clDelete" href="/index/?listform=${listform}$">Löschen</a>
+            </td>
+         </tr>
+         ${ :end-for }$
+      </table>
+      <a href="/add?listform=${listform}$">
+         <div class="add">
+            +
+         </div>
+      </a>
+      <a href="/index?listform=liste">
+         <div class="add" style="font-size: 24px;">
+            Als Liste darstellen
+         </div>
+      </a>
+      <script src="/webteams.js"></script>
+   </body>
+</html>
