@@ -15,11 +15,8 @@ class Application_cl(object):
 
    @cherrypy.expose
    #-------------------------------------------------------
-   def index(self, listform):
+   def index(self, listform = "tabelle"):
    #-------------------------------------------------------
-      if listform == "":
-         raise cherrypy.HTTPRedirect("/index?listform=" + "tabelle")
-
       return self.createList_p(listform)
 
    @cherrypy.expose
