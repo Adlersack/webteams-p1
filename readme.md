@@ -37,12 +37,12 @@
 
 ## webteams.js
 
-    -Bestätigunspop-up für Löschung
-    -Redirect zu delete funktion
+    - Bestätigunspop-up für Löschung
+    - Redirect zu delete funktion
 
 ## webteams.css
     
-    -Style für list,list2 und form hinzugefügt
+    - Style für list,list2 und form hinzugefügt
 
 ## HTTP Datenverkehr
 ![Beim start der Anwedung](https://cdn.discordapp.com/attachments/548959521381548035/902163829553782784/unknown.png)   
